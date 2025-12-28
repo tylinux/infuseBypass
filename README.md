@@ -16,4 +16,4 @@
 5. Sideload the ipa file using `Sideloadly` or any other method.
 
 or you can use `Sideloadly` to finish all steps like this: 
-![https://imgur.com/a/FmXRI8K](https://imgur.com/a/FmXRI8K)
+![https://imgur.com/a/FmXRI8K](https://i.imgur.com/XGjO1XU.png)
