@@ -13,6 +13,9 @@
 /* Begin PBXFileSystemSynchronizedBuildFileExceptionSet section */
 		05F84B732F000AF5006E4ED5 /* Exceptions for "InfuseBypass" folder in "InfuseBypass" target */ = {
 			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
+			membershipExceptions = (
+				CaptainHook.h,
+			);
 			publicHeaders = (
 				InfuseBypass.h,
 			);
@@ -20,11 +23,22 @@
 		};
 /* End PBXFileSystemSynchronizedBuildFileExceptionSet section */
 
+/* Begin PBXFileSystemSynchronizedGroupBuildPhaseMembershipExceptionSet section */
+		05F84B7B2F000B20006E4ED5 /* Exceptions for "InfuseBypass" folder in "Copy Bundle Resources" phase from "InfuseBypass" target */ = {
+			isa = PBXFileSystemSynchronizedGroupBuildPhaseMembershipExceptionSet;
+			buildPhase = 05F84B6C2F000AF5006E4ED5 /* Resources */;
+			membershipExceptions = (
+				CaptainHook.h,
+			);
+		};
+/* End PBXFileSystemSynchronizedGroupBuildPhaseMembershipExceptionSet section */
+
 /* Begin PBXFileSystemSynchronizedRootGroup section */
 		05F84B702F000AF5006E4ED5 /* InfuseBypass */ = {
 			isa = PBXFileSystemSynchronizedRootGroup;
 			exceptions = (
 				05F84B732F000AF5006E4ED5 /* Exceptions for "InfuseBypass" folder in "InfuseBypass" target */,
+				05F84B7B2F000B20006E4ED5 /* Exceptions for "InfuseBypass" folder in "Copy Bundle Resources" phase from "InfuseBypass" target */,
 			);
 			path = InfuseBypass;
 			sourceTree = "<group>";
