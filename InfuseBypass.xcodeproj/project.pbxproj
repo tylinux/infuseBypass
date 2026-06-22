@@ -13,9 +13,6 @@
 /* Begin PBXFileSystemSynchronizedBuildFileExceptionSet section */
 		05F84B732F000AF5006E4ED5 /* Exceptions for "InfuseBypass" folder in "InfuseBypass" target */ = {
 			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
-			membershipExceptions = (
-				CaptainHook.h,
-			);
 			publicHeaders = (
 				InfuseBypass.h,
 			);
@@ -23,22 +20,11 @@
 		};
 /* End PBXFileSystemSynchronizedBuildFileExceptionSet section */
 
-/* Begin PBXFileSystemSynchronizedGroupBuildPhaseMembershipExceptionSet section */
-		05F84B7B2F000B20006E4ED5 /* Exceptions for "InfuseBypass" folder in "Copy Bundle Resources" phase from "InfuseBypass" target */ = {
-			isa = PBXFileSystemSynchronizedGroupBuildPhaseMembershipExceptionSet;
-			buildPhase = 05F84B6C2F000AF5006E4ED5 /* Resources */;
-			membershipExceptions = (
-				CaptainHook.h,
-			);
-		};
-/* End PBXFileSystemSynchronizedGroupBuildPhaseMembershipExceptionSet section */
-
 /* Begin PBXFileSystemSynchronizedRootGroup section */
 		05F84B702F000AF5006E4ED5 /* InfuseBypass */ = {
 			isa = PBXFileSystemSynchronizedRootGroup;
 			exceptions = (
 				05F84B732F000AF5006E4ED5 /* Exceptions for "InfuseBypass" folder in "InfuseBypass" target */,
-				05F84B7B2F000B20006E4ED5 /* Exceptions for "InfuseBypass" folder in "Copy Bundle Resources" phase from "InfuseBypass" target */,
 			);
 			path = InfuseBypass;
 			sourceTree = "<group>";
@@ -56,10 +42,18 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		057B25A72FE9968C00AF1E81 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		05F84B642F000AF5006E4ED5 = {
 			isa = PBXGroup;
 			children = (
 				05F84B702F000AF5006E4ED5 /* InfuseBypass */,
+				057B25A72FE9968C00AF1E81 /* Frameworks */,
 				05F84B6F2F000AF5006E4ED5 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -181,9 +175,14 @@
 					"@executable_path/Frameworks",
 					"@loader_path/Frameworks",
 				);
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/InfuseBypass",
+				);
 				MARKETING_VERSION = 1.0;
 				MODULE_VERIFIER_SUPPORTED_LANGUAGES = "objective-c objective-c++";
 				MODULE_VERIFIER_SUPPORTED_LANGUAGE_STANDARDS = "gnu17 gnu++20";
+				OTHER_LDFLAGS = "-lc++";
 				PRODUCT_BUNDLE_IDENTIFIER = com.tylinux.InfuseBypass;
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;
@@ -212,9 +211,14 @@
 					"@executable_path/Frameworks",
 					"@loader_path/Frameworks",
 				);
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/InfuseBypass",
+				);
 				MARKETING_VERSION = 1.0;
 				MODULE_VERIFIER_SUPPORTED_LANGUAGES = "objective-c objective-c++";
 				MODULE_VERIFIER_SUPPORTED_LANGUAGE_STANDARDS = "gnu17 gnu++20";
+				OTHER_LDFLAGS = "-lc++";
 				PRODUCT_BUNDLE_IDENTIFIER = com.tylinux.InfuseBypass;
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;
