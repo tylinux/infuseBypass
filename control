@@ -1,0 +1,9 @@
+Package: com.tylinux.infusebypass
+Name: infuseBypass
+Version: 0.0.1
+Architecture: appletvos-arm64
+Description: An awesome MobileSubstrate tweak!
+Maintainer: tylinux
+Author: tylinux
+Section: Tweaks
+Depends: mobilesubstrate (>= 0.9.5000)
